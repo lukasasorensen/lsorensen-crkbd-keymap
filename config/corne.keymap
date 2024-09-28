@@ -16,6 +16,8 @@
 #define L4 4
 #define L5 5
 
+#define TAPPING_TERM 200
+
 / {
     keymap {
         compatible = "zmk,keymap";
