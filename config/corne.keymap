@@ -11,6 +11,13 @@
  * #include <dt-bindings/zmk/rgb.h>
  */
 
+#include <dt-bindings/led/led.h>
+
+&led_strip {
+    chain-length = <21>;
+};
+
+
 #define L0 0
 #define L1 1
 #define L2 2
@@ -86,3 +93,8 @@
     };
 };
 
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+}
