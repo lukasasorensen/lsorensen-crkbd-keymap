@@ -29,7 +29,7 @@
             &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y  &kp U  &kp I  &kp O  &kp P  &kp EQUAL
 &kp LS(LC(LA(LGUI))) &kp A  &kp S  &kp D  &lt L3 F  &lt L4 G          &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
            &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                &kp N  &lt L5 M  &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
-                       &kp LCTRL  &mt LCTRL BSPC &mt LGUI TAB                  &mt LALT ENTER  &lt L1 SPACE  &kp ESC
+                       &kp LALT  &mt LCTRL BSPC &mt LGUI TAB                  &mt LALT ENTER  &lt L1 SPACE  &kp ESC
             >;
         };
 
@@ -76,9 +76,9 @@
         // Layer 5
         layer5 {
             bindings = <
-                &none  &none  &none  &none  &none  &sys_reset          &sys_reset   &none  &none  &none  &none  &rgb_ug RGB_TOG
-                &none  &none  &none  &none  &none  &bootloader         &bootloader  &none  &none  &none  &none  &rgb_ug RGB_EFF
-                &none  &none  &none  &none  &none  &none               &none        &none  &none  &none  &none  &none
+                &rgb_ug RGB_TOG  &none  &none  &none  &none  &sys_reset          &sys_reset   &none  &none  &none  &none  &none
+                &rgb_ug RGB_EFF  &none  &none  &none  &none  &bootloader         &bootloader  &none  &none  &none  &none  &none
+                &none            &none  &none  &none  &none  &none               &none        &none  &none  &none  &none  &none
                           &none  &none   &none                                &none &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
