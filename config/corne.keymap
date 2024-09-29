@@ -76,8 +76,8 @@
         // Layer 5
         layer5 {
             bindings = <
-                &none  &none  &none  &none  &none  &sys_reset          &sys_reset   &none  &none  &none  &none  &none
-                &none  &none  &none  &none  &none  &bootloader         &bootloader  &none  &none  &none  &none  &none
+                &none  &none  &none  &none  &none  &sys_reset          &sys_reset   &none  &none  &none  &none  &rgb_ug RGB_TOG
+                &none  &none  &none  &none  &none  &bootloader         &bootloader  &none  &none  &none  &none  &rgb_ug RGB_EFF
                 &none  &none  &none  &none  &none  &none               &none        &none  &none  &none  &none  &none
                           &none  &none   &none                                &none &C_VOLUME_DOWN  &C_VOLUME_UP
             >;
