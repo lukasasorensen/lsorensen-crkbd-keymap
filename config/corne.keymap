@@ -20,6 +20,10 @@
 
 #define TAPPING_TERM 200
 
+&led_strip {
+    chain-length = <21>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
