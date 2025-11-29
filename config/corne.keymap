@@ -61,7 +61,7 @@
         // Layer 3
         layer3 {
             bindings = <
-                &none  &none  &none  &none  &none  &kp KC_CAPS                       &trans &kp HOME  &kp END  &trans  &kp LC(LS(TAB))  &trans
+                &none  &none  &none  &none  &none  &kp LCAPS                         &trans &kp HOME  &kp END  &trans  &kp LC(LS(TAB))  &trans
                 &none  &none  &none  &none  &none  &none                             &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
                 &none  &none  &none  &none  &none  &none                             &none     &kp PG_DN  &kp PG_UP  &none      &none  &none
                 &kp LC(LG(SPACE))   &mo 6    &kp LC(LA(LS(LG(UP))))                       &kp LG(LA(C))       &lt 6 LSHFT      &trans
