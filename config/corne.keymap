@@ -83,17 +83,17 @@
         };
 
         // Layer 6: Alt Nav + Window snapping
-        layer_6 {
-            bindings = <
-                &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp HOME         &kp END            &none        &none     &kp LC(LA(LS(SEMI)))
-
-                &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN         &kp UP             &kp LA(RIGHT) &none  &none
-
-                &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L)))
-
-                        &none  &none  &none                                   &kp LC(LA(RET))  &none  &none
-            >;
-        };
+        /* layer6 { */
+        /*     bindings = < */
+        /*         &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp HOME         &kp END            &none        &none     &kp LC(LA(LS(SEMI))) */
+        /**/
+        /*         &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN         &kp UP             &kp LA(RIGHT) &none  &none */
+        /**/
+        /*         &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L))) */
+        /**/
+        /*                 &none  &none  &none                                   &kp LC(LA(RET))  &none  &none */
+        /*     >; */
+        /* }; */
 
     };
 };
