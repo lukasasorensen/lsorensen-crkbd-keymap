@@ -25,9 +25,9 @@
         // Layer 0
         layer0 {
             bindings = <
-            &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y  &kp U     &kp I     &kp O    &kp P     &kp EQUAL
-&kp LS(LC(LA(LGUI))) &kp A  &kp S  &kp D  &lt L3 F  &lt L4 G          &kp H  &kp J     &kp K     &kp L    &kp SEMI  &mt LS(LC(LALT)) &kp SQT
-           &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                &kp N  &lt L5 M  &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
+            &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y  &kp U   &kp I     &kp O    &kp P     &kp EQUAL
+&kp LS(LC(LA(LGUI))) &kp A  &kp S  &kp D  &lt L3 F  &lt L4 G          &kp H  &kp J   &kp K     &kp L    &kp SEMI  &mt LS(LC(LALT)) &kp SQT
+           &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                &kp N  &kp M   &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
                        &kp LALT  &mt LCTRL BSPC &mt LGUI TAB                  &mt RGUI ENTER  &lt L1 SPACE  &lt L2 ESC
             >;
         };
@@ -45,7 +45,7 @@
         // Layer 2
         layer2 {
             bindings = <
-                &bootloader  &kp ESC  &kp AMPS  &kp STAR &kp FSLH &kp BSLH          &none  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+                &bootloader  &kp ESC  &kp AMPS  &kp STAR &kp FSLH &kp BSLH        &none  &kp F7  &kp F8  &kp F9  &kp F12  &trans
                 &trans  &kp DQT  &kp TILDE &kp COLON  &kp PLUS &kp MINUS          &none  &kp F4  &kp F5  &kp F6  &kp F11  &trans
                 &trans  &none    &none     &kp UNDER  &none     &kp TILDE         &none  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                    &trans  &trans  &trans                                 &trans  &trans  &trans
@@ -73,14 +73,14 @@
         };
 
         // Layer 5
-        layer5 {
-            bindings = <
-                &none   &none  &none  &none         &none          &sys_reset                  &sys_reset   &none  &none  &none  &none  &none
-                &none   &none  &none  &kp C_BRI_DN  &kp C_BRI_INC  &bootloader                 &bootloader  &none  &none  &none  &none  &none
-                &none   &none  &none  &none         &none          &none                       &none        &none  &none  &none  &none  &none
-                              &none  &none  &none                                                   &none  &none &none
-            >;
-        };
+        /* layer5 { */
+        /*     bindings = < */
+        /*         &none   &none  &none  &none         &none          &none                  &none   &none  &none  &none  &none  &none */
+        /*         &none   &none  &none  &none         &none          &none                       &none  &none  &none  &none  &none  &none */
+        /*         &none   &none  &none  &none         &none          &none                       &none        &none  &none  &none  &none  &none */
+        /*                       &none  &none  &none                                                   &none  &none &none */
+        /*     >; */
+        /* }; */
 
         // Layer 6: Alt Nav + Window snapping
         /* layer6 { */
