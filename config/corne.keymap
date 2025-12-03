@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 
 #define L0 0
@@ -15,6 +16,7 @@
 #define L3 3
 #define L4 4
 #define L5 5
+#define L6 6
 
 #define TAPPING_TERM 200
 
@@ -75,7 +77,7 @@
         // Layer 5
         layer5 {
             bindings = <
-                &none   &none  &none  &none         &none          &bootloader                 &bootloader   &none  &none  &none  &none  &none
+    &ext_power EP_TOG   &none  &none  &none         &none          &bootloader                 &bootloader   &none  &none  &none  &none  &ext_power EP_TOG
                 &none   &none  &none  &none         &none          &none                       &none   &none  &none  &none  &none  &none
             &bt BT_CLR  &none  &none  &none         &none          &none                       &none   &none  &none  &none  &none  &bt BT_CLR
                             &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3                                   &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3
@@ -83,17 +85,17 @@
         };
 
         // Layer 6: Alt Nav + Window snapping
-        /* layer6 { */
-        /*     bindings = < */
-        /*         &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp HOME         &kp END            &none        &none     &kp LC(LA(LS(SEMI))) */
-        /**/
-        /*         &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN         &kp UP             &kp LA(RIGHT) &none  &none */
-        /**/
-        /*         &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L))) */
-        /**/
-        /*                 &none  &none  &none                                   &kp LC(LA(RET))  &none  &none */
-        /*     >; */
-        /* }; */
+        layer6 {
+            bindings = <
+                &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp HOME         &kp END            &none        &none     &kp LC(LA(LS(SEMI)))
+
+                &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN         &kp UP             &kp LA(RIGHT) &none  &none
+
+                &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L)))
+
+                        &none  &none  &none                                   &kp LC(LA(RET))  &none  &none
+            >;
+        };
 
     };
 };
