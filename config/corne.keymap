@@ -91,13 +91,14 @@
         // Layer 6: Alt Nav + Window snapping
         layer6 {
             bindings = <
-                &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp HOME         &kp END            &none        &none     &kp LC(LA(LS(SEMI)))
+              // ------------------------------------------------------topleft corner----snap center---------------snap menu ---
+                &none &none &none &none &none &none                &kp LC(LA(LS(J))) &kp LC(LA(LS(.))) &kp LC(LA(LS(,)))  &none        &none     &kp LC(LA(LS(SEMI)))
 
-                &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN         &kp UP             &kp LA(RIGHT) &none  &none
+                &none &none &none &none &none &none                &kp LA(LEFT)      &kp DOWN          &kp UP             &kp LA(RIGHT) &none  &none
 
-                &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT)) &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L)))
+                &none &none &none &none &none &none                &kp LC(LA(LS(K))) &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &none        &none  &kp LC(LA(LS(L)))
 
-                        &none  &none  &none                                   &kp LC(LA(RET))  &none  &none
+                        &none  &none  &none                                   &kp LC(LA(RET))  &none   &none
             >;
         };
 
